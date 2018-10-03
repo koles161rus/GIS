@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  {% load staticfiles %}
+  <link href="{% static 'node_modules/openlayers/dist/ol.css' %}" rel='stylesheet'/>
+  <link href="{% static 'src/css/style.css' %}" rel='stylesheet'/>
+  <script data-main="{% static 'build/js/init.js' %}" src="{% static 'node_modules/requirejs/require.js' %}"></script>
+  <title>Markers app</title>
+</head>
+<body>
+  <div id='app-root'></div>
+</body>
+</html>
